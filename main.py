@@ -1,4 +1,4 @@
-from day4 import get_last_winning_board_score
+from day5 import num_overlapping_points_with_diagonal
 
 if __name__ == '__main__':
-    print(get_last_winning_board_score())
+    print(num_overlapping_points_with_diagonal())
