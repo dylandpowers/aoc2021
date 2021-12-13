@@ -1,4 +1,4 @@
-from day5 import num_overlapping_points_with_diagonal
+from day6 import num_fish_256_days
 
 if __name__ == '__main__':
-    print(num_overlapping_points_with_diagonal())
+    print(num_fish_256_days())
