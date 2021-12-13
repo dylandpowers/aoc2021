@@ -37,5 +37,31 @@ def num_overlapping_points_with_diagonal():
             after = line[line.index(" ") + 3:]
             first_coord = tuple([int(x.strip()) for x in first.split(',')])
             second_coord = tuple([int(x.strip()) for x in after.split(',')])
-            
+
+            curr_x, curr_y = first_coord
+            if first_coord[0] == second_coord[0]:
+                x_multiplier = 0
+            elif first_coord[0] < second_coord[0]:
+                x_multiplier = 1
+            else:
+                x_multiplier = -1
+
+            if first_coord[1] == second_coord[1]:
+                y_multiplier = 0
+            elif first_coord[1] < second_coord[1]:
+                y_multiplier = 1
+            else:
+                y_multiplier = -1
+
+            while curr_x != second_coord[0] or curr_y != second_coord[1]:
+                point = (curr_x, curr_y)
+                if point in points:
+                    duplicates.add(point)
+                points.add(point)
+                curr_x += 1 * x_multiplier
+                curr_y += 1 * y_multiplier
+            point = (curr_x, curr_y)
+            if point in points:
+                duplicates.add(point)
+            points.add(point)
     return len(duplicates)
