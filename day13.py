@@ -28,8 +28,8 @@ def print_unlock_code(paper, all_folds):
                 new_points.add((x, y_coord))
         points = new_points
 
-    max_x = max([p[0] for p in points])
-    max_y = max([p[1] for p in points])
+    max_x = max(map(lambda p: p[0], points))
+    max_y = max(map(lambda p: p[1], points))
 
     for j in range(max_y + 1):
         for i in range(max_x + 1):
