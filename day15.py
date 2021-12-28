@@ -56,6 +56,7 @@ def calculate_lowest_risk_repeated(risk_levels):
 
     return calculate_lowest_risk(expanded_risk_levels)
 
+
 def neighbors4(i, j, m, n):
     candidates = [(i + 1, j), (i - 1, j), (i, j + 1), (i, j - 1)]
     return [(x, y) for (x, y) in candidates if 0 <= x < m and 0 <= y < n]
