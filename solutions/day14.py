@@ -85,7 +85,7 @@ def get_polymer_frequencies(original, insertion_rules, steps):
 
 
 if __name__ == '__main__':
-    with open('inputs/day14.txt') as f:
+    with open('../inputs/day14.txt') as f:
         template = f.readline().strip()
         f.readline()
         rules = {line.strip()[:2]: line.strip()[-1] for line in f.readlines()}

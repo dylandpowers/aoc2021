@@ -1,11 +1,11 @@
 def get_minimum_fuel():
-    with open('inputs/day7.txt') as f:
+    with open('../inputs/day7.txt') as f:
         positions = [int(x.strip()) for x in f.readline().split(',')]
     return min([sum(abs(x - i) for x in positions) for i in range(max(positions))])
 
 
 def get_minimum_fuel_two():
-    with open('inputs/day7.txt') as f:
+    with open('../inputs/day7.txt') as f:
         positions = [int(x.strip()) for x in f.readline().split(',')]
 
     distances = {0: 0}

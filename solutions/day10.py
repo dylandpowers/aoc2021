@@ -70,7 +70,7 @@ def middle_score(lines):
 
 
 if __name__ == '__main__':
-    with open('inputs/day10.txt') as f:
+    with open('../inputs/day10.txt') as f:
         data = [line.strip() for line in f.readlines()]
     print(total_syntax_error_score(data))
     print(middle_score(data))

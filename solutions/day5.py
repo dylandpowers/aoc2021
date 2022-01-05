@@ -1,7 +1,7 @@
 def num_overlapping_points():
     points = set()
     duplicates = set()
-    with open('inputs/day5.txt') as f:
+    with open('../inputs/day5.txt') as f:
         for line in f.readlines():
             first = line[:line.index(" ")]
             after = line[line.index(" ") + 3:]
@@ -31,7 +31,7 @@ def num_overlapping_points():
 def num_overlapping_points_with_diagonal():
     points = set()
     duplicates = set()
-    with open('inputs/day5.txt') as f:
+    with open('../inputs/day5.txt') as f:
         for line in f.readlines():
             first = line[:line.index(" ")]
             after = line[line.index(" ") + 3:]

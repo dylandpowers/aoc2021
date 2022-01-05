@@ -62,7 +62,7 @@ def print_board(board):
 
 
 if __name__ == '__main__':
-    with open('inputs/day11.txt') as f:
+    with open('../inputs/day11.txt') as f:
         data = [[int(x) for x in line.strip()] for line in f.readlines()]
     # print(total_flashes(data, 100))
     print(first_step_all_flash(data))

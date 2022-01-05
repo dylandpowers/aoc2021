@@ -1,5 +1,5 @@
 def num_fish_80_days():
-    with open('inputs/day6.txt') as f:
+    with open('../inputs/day6.txt') as f:
         fish = [int(x.strip()) for x in f.readline().split(',')]
 
     for i in range(80):
@@ -15,7 +15,7 @@ def num_fish_80_days():
 
 
 def num_fish_256_days():
-    with open('inputs/day6.txt') as f:
+    with open('../inputs/day6.txt') as f:
         fish = [int(x.strip()) for x in f.readline().split(',')]
 
     # dp[i] is the number of fish that will be creating a new fish on day i

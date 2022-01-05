@@ -44,7 +44,7 @@ if __name__ == '__main__':
     dots = []
     folds = []
     read_folds = False
-    with open('inputs/day13.txt') as f:
+    with open('../inputs/day13.txt') as f:
         for line in f.readlines():
             if read_folds:
                 axis, value = line[FOLD_INDEX:].split('=')

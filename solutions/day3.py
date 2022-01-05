@@ -3,7 +3,7 @@ from collections import Counter
 
 
 def get_power_consumption():
-    with open('inputs/day3.txt') as f:
+    with open('../inputs/day3.txt') as f:
         lines = [line.strip() for line in f.readlines()]
 
     gamma, epsilon = '', ''
@@ -17,7 +17,7 @@ def get_power_consumption():
 
 
 def get_life_support_rating():
-    with open('inputs/day3.txt') as f:
+    with open('../inputs/day3.txt') as f:
         lines = [line.strip() for line in f.readlines()]
 
     o_candidates, c_candidates = copy.deepcopy(lines), copy.deepcopy(lines)

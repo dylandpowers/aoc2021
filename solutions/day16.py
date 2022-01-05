@@ -108,7 +108,7 @@ def convert_transmission_to_binary(transmission):
 
 
 def main():
-    with open('inputs/day16.txt') as f:
+    with open('../inputs/day16.txt') as f:
         transmission = f.readline().strip()
     t = convert_transmission_to_binary(transmission)
     # print(add_version_numbers(t, 0)[0])

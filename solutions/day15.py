@@ -63,7 +63,7 @@ def neighbors4(i, j, m, n):
 
 
 def main():
-    with open('inputs/day15.txt') as f:
+    with open('../inputs/day15.txt') as f:
         risk_levels = [[int(x) for x in line.strip()] for line in f.readlines()]
     # print(calculate_lowest_risk(risk_levels))
     print(calculate_lowest_risk_repeated(risk_levels))

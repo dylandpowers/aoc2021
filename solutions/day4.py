@@ -2,7 +2,7 @@ import copy
 
 
 def get_first_winning_board_score():
-    with open('inputs/day4.txt') as f:
+    with open('../inputs/day4.txt') as f:
         numbers = [int(seq.strip()) for seq in f.readline().split(',')]
         f.readline()
 
@@ -31,7 +31,7 @@ def get_first_winning_board_score():
 
 
 def get_last_winning_board_score():
-    with open('inputs/day4.txt') as f:
+    with open('../inputs/day4.txt') as f:
         numbers = [int(seq.strip()) for seq in f.readline().split(',')]
         f.readline()
 

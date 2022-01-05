@@ -1,7 +1,7 @@
 def num_increasing_depths():
     prev = -1
     ans = 0
-    with open('inputs/day1.txt') as f:
+    with open('../inputs/day1.txt') as f:
         for line in f.readlines():
             if prev == -1:
                 prev = int(line)
@@ -15,7 +15,7 @@ def num_increasing_depths():
 
 def num_increasing_windows():
     ans = 0
-    with open('inputs/day1.txt') as f:
+    with open('../inputs/day1.txt') as f:
         nums = [int(line) for line in f.readlines()]
 
     window = nums[0] + nums[1] + nums[2]

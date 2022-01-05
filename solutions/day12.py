@@ -60,7 +60,7 @@ def build_graph(conns):
 
 
 if __name__ == '__main__':
-    with open('inputs/day12.txt') as f:
+    with open('../inputs/day12.txt') as f:
         connections = [line.strip() for line in f.readlines()]
     g = build_graph(connections)
     # print(num_paths_through_system(g))

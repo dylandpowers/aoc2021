@@ -1,5 +1,5 @@
 def get_final_position():
-    with open('inputs/day2.txt') as f:
+    with open('../inputs/day2.txt') as f:
         commands = [line for line in f.readlines()]
 
     horizontal, depth = 0, 0
@@ -17,7 +17,7 @@ def get_final_position():
     return horizontal * depth
 
 def get_final_position_with_aim():
-    with open('inputs/day2.txt') as f:
+    with open('../inputs/day2.txt') as f:
         commands = [line for line in f.readlines()]
 
     horizontal, depth, aim = 0, 0, 0

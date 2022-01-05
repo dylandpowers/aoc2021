@@ -38,7 +38,7 @@ def dfs_basin(lava, x, y, visited):
 
 if __name__ == '__main__':
     data = []
-    with open('inputs/day9.txt') as f:
+    with open('../inputs/day9.txt') as f:
         for line in f.readlines():
             data.append([int(c) for c in line.strip()])
     print(get_risk_level_sum(data))

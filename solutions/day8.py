@@ -11,7 +11,7 @@ LENGTH_TO_DIGIT = {
 
 def get_unique_output_segments():
     patterns_to_output = {}
-    with open('inputs/day8.txt') as f:
+    with open('../inputs/day8.txt') as f:
         for line in f.readlines():
             patterns = tuple([p.strip() for p in line[:line.index('|') - 1].split(' ')])
             output = [s.strip() for s in line[line.index('|') + 2:].split(' ')]
@@ -48,7 +48,7 @@ def find_eight(patterns):
 # for the help here :)
 def sum_output_values():
     data = []
-    with open('inputs/day8.txt') as f:
+    with open('../inputs/day8.txt') as f:
         for line in f.readlines():
             patterns = [frozenset(p.strip()) for p in line[:line.index('|') - 1].split(' ')]
             output = [frozenset(s.strip()) for s in line[line.index('|') + 2:].split(' ')]

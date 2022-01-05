@@ -57,7 +57,7 @@ def try_launch(vx, vy, x_range, y_range):
 
 
 def main():
-    with open('inputs/day17.txt') as f:
+    with open('../inputs/day17.txt') as f:
         line = f.readline().strip()
         x_start, x_end = line.index('x=') + 2, line.index(',')
         min_x = int(line[x_start:line.index('.', x_start)])
